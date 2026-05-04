@@ -1,0 +1,42 @@
+# Network Device Monitor Configuration
+# Add your network devices below. Each device needs a name, IP, type, and latency threshold.
+
+devices:
+  - name: "Core Switch"
+    ip: "192.168.1.1"
+    type: "switch"
+    threshold_ms: 50
+
+  - name: "Edge Firewall"
+    ip: "192.168.1.254"
+    type: "firewall"
+    threshold_ms: 30
+
+  - name: "File Server"
+    ip: "192.168.1.10"
+    type: "server"
+    threshold_ms: 20
+
+  - name: "Wireless AP - Floor 1"
+    ip: "192.168.1.20"
+    type: "access_point"
+    threshold_ms: 40
+
+  - name: "Backup Server"
+    ip: "192.168.1.50"
+    type: "server"
+    threshold_ms: 25
+
+# Alert configuration
+alert:
+  email: "admin@example.com"
+  smtp_server: "smtp.example.com"
+  smtp_port: 587
+  # smtp_user: "your_username"
+  # smtp_pass: "your_password"
+
+# Monitoring settings
+monitoring:
+  interval_seconds: 60
+  retry_count: 3
+  log_file: "status_log.csv"

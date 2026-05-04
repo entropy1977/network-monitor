@@ -1,0 +1,6 @@
+timestamp,device,ip,status,latency_ms
+2026-05-02 22:29:32,Core Switch,192.168.1.1,DOWN,---
+2026-05-02 22:29:32,Edge Firewall,192.168.1.254,DOWN,---
+2026-05-02 22:29:32,File Server,192.168.1.10,DOWN,---
+2026-05-02 22:29:32,Wireless AP - Floor 1,192.168.1.20,DOWN,---
+2026-05-02 22:29:32,Backup Server,192.168.1.50,DOWN,---
